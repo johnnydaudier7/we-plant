@@ -1,0 +1,1 @@
+export const numericFields = ['zipCode', 'cardNumber', 'expiryMonth', 'expiryYear', 'cvv']
