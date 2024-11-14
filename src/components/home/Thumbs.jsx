@@ -23,8 +23,7 @@ const Thumbs = () => {
 
   return (
     <article className='thumbs-container'>
-        <h3>MEET OUR</h3>
-        <h3>Green Thumbs</h3>        
+        <h3>Meet Our Green Thumbs</h3>        
       <div className='thumb-box-container'>
         {
           thumbs.map((thumb, idx) =>
@@ -32,7 +31,7 @@ const Thumbs = () => {
               <img className='thumb-img' src={thumb.img} alt='' />
               <h4 className='thumb-name'>{thumb.name}</h4>
               <p className='thumb-rank'>{thumb.rank}</p>
-            </div>)
+          </div>)
         }
       </div>
     </article>

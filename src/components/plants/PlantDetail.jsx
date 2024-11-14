@@ -49,7 +49,9 @@ function PlantDetail ({ item }) {
           <Button buttonText={'BACK TO PLANTS'}></Button>
         </NavLink>
       </div>
+
       <h1>{item['Common name']}</h1>
+      
       <div className='main-wrapper'>
         <div className='container'>
           <div className='product-div'>

@@ -9,8 +9,10 @@ import CartContextProvider from './context/CartContext'
 import CareGuides from './components/guides/CareGuides'
 import { Route, BrowserRouter, Routes} from 'react-router-dom'
 import ErrorComponent from './components/error/ErrorComponent'
-import Confirmation from './components/confirmation/Confirmation'
+
 import PlantDetailContainer from './components/plants/PlantDetailContainer'
+import Cancel from './components/payments/Cancel'
+import Success from './components/payments/Success'
 
 function App () {
   return (
@@ -18,6 +20,8 @@ function App () {
       <BrowserRouter>
         <NavBar />
         <Routes>
+          <Route path='/cancel' element={<Cancel/>}/>
+          <Route path='/success' element={<Success/>}/>
           <Route path='/' element={<Home />} />
           <Route path='/cart' element={<Cart />} />          
           <Route path='/All' element={<AllPlants />} />
@@ -25,7 +29,7 @@ function App () {
           <Route path='/error' element={<ErrorComponent />} />
           <Route path='/care-guides' element={<CareGuides />} />
           <Route path='/:plantId' element={<PlantDetailContainer />} />
-          <Route path='/Confirmation/:orderId' element={<Confirmation/>}/>
+          
         </Routes>
         <Footer />
       </BrowserRouter>

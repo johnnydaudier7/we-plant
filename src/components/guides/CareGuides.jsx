@@ -9,9 +9,7 @@ const CareGuides = () => {
     
 
     return(
-        <>
-            <button>show gpt</button>
-            <button>get gpt</button>
+        <>           
             <div className="care-guides">
                 <h1>Care Guides</h1>
                 <p>Step into our world of “Care Guides” at We Plant, 
@@ -37,8 +35,7 @@ const CareGuides = () => {
             
                     </div>
                 )}
-            </div>
-			  
+            </div>			  
         </>
         
 

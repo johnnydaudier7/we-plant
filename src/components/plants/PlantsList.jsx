@@ -6,7 +6,7 @@ import Pagination from '../pagination/Pagination'
 import ClimateFilter from '../climats/ClimateFilter'
 import getPlantsFromStorage from '../../utils/getPlantsFromStorage'
 
-const PlantsList = ( ) => {
+const PlantsList = () => {
   const [filter, setFilter] = useState(false)
   const [currentPage, setCurrentPage] = useState(1)
   const [selectedClimat, setSelectedClimat] = useState('')
@@ -15,11 +15,10 @@ const PlantsList = ( ) => {
   const plantsPerPage = 15 
 
   const getPlantsToRender = () => {
-
     const lastIndex = plantsPerPage * currentPage
-    const firstIndex = lastIndex - plantsPerPage     
-    return getPlantsFromStorage().slice(firstIndex, lastIndex)
+    const firstIndex = lastIndex - plantsPerPage
 
+    return getPlantsFromStorage().slice(firstIndex, lastIndex)
   }
 
   // GET ALL CLIMATS

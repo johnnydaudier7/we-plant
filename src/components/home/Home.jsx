@@ -23,7 +23,7 @@ const Home = () => {
     class: 'article-content-reversed'    
   }
   const readyToArticle = {
-    h3: 'Ready to cultivate your very own green sanctuary? Begin the adventure today!',
+    h2: 'Ready to cultivate your very own green sanctuary? Begin the adventure today!',
     links: [{
       path: '/All',
       buttonText: 'Explore Plants'
@@ -41,9 +41,9 @@ const Home = () => {
           <h1>WE PLANT</h1>
           <p>Discover a wide variety of exotic plants and customized care to transform your home into a green oasis.</p>
           <div className='we-plant-buttons-container'>
-           <Button buttonText={'view all'}/>
+           <Button buttonText={'View Plants'}/>
            
-           <Button buttonText={'care guides'}/>
+           <Button buttonText={'Care Guides'}/>
           </div>       
 
            
@@ -66,7 +66,7 @@ const Home = () => {
 
       <div className='ready-to-container'>
         <div className='ready-to-text'>
-          <h3>{readyToArticle.h3}</h3>
+          <h2>{readyToArticle.h2}</h2>
         </div>
         <div className='ready-to-btn-group'>
           {readyToArticle.links.map(link => 
